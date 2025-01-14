@@ -58,6 +58,7 @@ export PYTHONPATH='YOUR-PATH-TO-SHIFTADDLLM-REPO'
 - `groupsize`: groupsize to use for quantization; default uses full row.
 - `act-order`: whether to apply the activation order GPTQ heuristic.
 - `bcq`: whether to quantize weights with binary coded quantization (bcq).
+- `tcq`: whether to apply ternary coded quantization instead of bcq.
 - `bcq_round`: steps to iterate bcq quantization.
 - `columnwise`: whether to use columnwise - bcq - round to power of 2 - quantization to evaluate model.
 - `block_quant` & `cust_group`: whether to use blockwise (8 column by 1/8 rows for 1 quantize param) - bcq - round to power of 2 - quantization to evaluate model. Need to use with 'columnwise' set.
